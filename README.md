@@ -1,4 +1,4 @@
-# AWS CLI in Docker
+# AWS CLI in Docker which is Digital Ocean compliant
 
 Containerized AWS CLI on alpine to avoid requiring the aws cli to be installed on CI machines. Forked from [mesosphere/aws-cli](https://github.com/mesosphere/aws-cli)
 

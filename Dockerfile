@@ -11,7 +11,9 @@ RUN apk -v --update add \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
 
-ADD ./files/bash_profile.sh /root/.bash_profile
+ADD ./files/s3search /usr/bin/s3search
+
+RUN chmod a+x /usr/bin/s3search
 
 VOLUME /root/.aws
 VOLUME /project
