@@ -1,0 +1,10 @@
+#!/bin/sh -xe
+echo "What Bucket do you want to search?"
+read BUCKETNAME
+echo "Please add a pipe deliminated list of files names to search"
+read FILENAMELIST
+echo RUNNING
+aws s3 ls --endpoint $ENDPOINT s3://$BUCKETNAME  --recursive | grep -E \"$FILENAMELIST\"
+
+
+
